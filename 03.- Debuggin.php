@@ -2,17 +2,18 @@
 
 $nombre = "Juan";
 $arreglo = [
-    "nombre"
-    "apellido"
+    "nombre" => "Juan",
+    "apellido" => "Perez",
+    "edad" => "18",
 ];
 
 // Mas Legible
-print_r($nombre);
+print_r($arreglo);
 
 echo "<br>";
 
 // Mas información
-var_dump($nombre);
+var_dump($arreglo);
 
 // Tarea: Averiguar los siguientes tipos de datos
 $numero_1 = 10;

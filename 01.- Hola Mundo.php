@@ -13,6 +13,6 @@ echo "<br>";
 
 echo "Hola '$nombre $apellido' <br>";
 
-echo 'Hola $nombre $apellido';
+echo 'Hola "$nombre $apellido" <br>';
 
 ?>
