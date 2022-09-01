@@ -26,3 +26,5 @@ $bandera = 0;
 $bandera = (bool) $bandera;
 var_dump($bandera);
 echo "<br>";
+// falso cuando es 0 ó vacio
+// verdadero cuando es distinto a 0 y tiene contenido
