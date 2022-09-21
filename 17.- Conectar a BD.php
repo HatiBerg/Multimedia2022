@@ -1,6 +1,6 @@
 <?php
 
-// Conexción a BD
+// Conexión a BD
 
 //1.- Conexión
 $host = "localhost";
