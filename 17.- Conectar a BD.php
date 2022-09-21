@@ -6,7 +6,7 @@
 $host = "localhost";
 $user = "root";
 $pass = "";
-$db = "multimedia2022";
+$db = "Multimedia2022";
 
 $conexion = mysqli_connect($host, $user, $pass, $db);
 
