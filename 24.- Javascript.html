@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript</title>
+</head>
+<body>
+
+    <h1 id="titulo" onclick="cambiarColor()">Probando Javascript</h1>
+
+    <script>
+        //alert("Hola Mundo");
+        console.log("Hola Mundo");
+
+        let texto = "Texto en Javascript";
+        console.log(texto);
+
+        let elemento = document.getElementsById('titulo');
+        elemento.style.color = 'red';
+
+        function cambiarColor() {
+            let elemento = document.getElementsById('titulo');
+            elemento.style.color = 'green';
+            console.log("Ejecutando funcion cambiar color");
+        }
+    </script>
+</body>
+</html>
