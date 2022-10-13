@@ -4,22 +4,37 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ajax</title>
+    <title>Document</title>
 </head>
 <body>
-    <h1 id="titulo">Título de la página</h1>
 
-    <script src="https://code.jquery.com/jquery-3.6.1.js"></script>
+    <h1 id="titulo">Titulo de la página</h1>
+    <h2 id="subtitulo">Subtitulo</h2>
+    
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
     <script>
-        $.ajax({
-            url: "26.2.- Respuesta Ajax.php",
-            type: "post",
-            data: {
-                zipcode: 1234567890
-            }
-        }).done(function() {
-            console.log("OK");
+
+        $("#titulo").click(function(){
+
+            $.ajax({
+                url: "26.2.- Respuesta Ajax.php",
+                type: "post",
+                data: {
+                    zipcode: 1234567890
+                },
+                success: function (result) {
+                    console.log(result);
+                    $("#subtitulo").html(result);
+                }
+            }).done(function () {
+                console.log("OK");
+            });
+
         });
+        
+
+
+        
     </script>
 </body>
 </html>

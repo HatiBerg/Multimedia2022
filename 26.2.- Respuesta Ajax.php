@@ -5,4 +5,4 @@ if (isset($_POST['zipcode'])) {
     $zipcode = $_POST['zipcode'];
 }
 
-echo "Hola Mundo";
+echo "Hola mundo $zipcode";
